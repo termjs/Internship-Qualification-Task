@@ -17,7 +17,7 @@ export default function pushData() {
         })
             .then(response => {
                 response.json(); // Convert to json
-                window.location.assign(`/newformpage`); // Navigate to another page
+                window.location.assign(`Internship-Qualification-Task/newformpage`); // Navigate to another page
             })
             .catch((error) => {
 
