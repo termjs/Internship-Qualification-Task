@@ -1,12 +1,15 @@
 import { url } from "./fetchAPIData";
+import {useHistory} from 'react-router-dom'
 
 export default function pushData() {
     const inputArr = [];
     for (let i = 1; i < 5; i++) {
         const inputValue = document.getElementById(`addInput${i}`).value;
-        
+
         inputArr.push(inputValue); // Push input values to array
         localStorage.setItem("addPostID", inputArr);
+
+        let history = useHistory()
 
         fetch(url, {
             method: 'POST', // Specify the method
@@ -17,7 +20,8 @@ export default function pushData() {
         })
             .then(response => {
                 response.json(); // Convert to json
-                window.location.assign(`Internship-Qualification-Task/newformpage`); // Navigate to another page
+                
+                history.push('Internship-Qualification-Task/newformpage'); // Navigate to another page
             })
             .catch((error) => {
 
