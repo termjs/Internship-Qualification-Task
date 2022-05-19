@@ -12,7 +12,7 @@ export default function fetchAPIData() {
             singleData.map((values) => {
 
                 specificPostData += `
-                <h2 style="font-weight: lighter">
+                <h2 style="font-weight: lighter; text-align: left">
                     {
                         <br>
                             "userId": ${values.userId}, <br>
