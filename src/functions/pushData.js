@@ -18,7 +18,7 @@ export default function pushData() {
             .then(response => {
                 response.json(); // Convert to json
                 
-                window.location.assign('pages/newformpage'); // Navigate to another page
+                window.location.assign('/newformpage'); // Navigate to another page
             })
             .catch((error) => {
 

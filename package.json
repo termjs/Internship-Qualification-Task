@@ -1,6 +1,5 @@
 {
   "name": "my-app",
-  "homepage": "https://termissues.github.io/Internship-Qualification-Task",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
