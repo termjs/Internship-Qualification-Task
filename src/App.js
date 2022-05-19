@@ -9,8 +9,8 @@ function App() {
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path='/' exact element={<ListPage />} />
-        <Route path='Internship-Qualification-Task/newformpage' exact element={<NewForm />} />
-        <Route path='Internship-Qualification-Task/detailspage' exact element={<Details />} />
+        <Route path='pages/newformpage' exact element={<NewForm />} />
+        <Route path='pages/detailspage' exact element={<Details />} />
       </Routes>
     </BrowserRouter>
   </div>;
