@@ -48,7 +48,7 @@ class NewForm extends React.Component {
                                 </div>
                                 <div className="status">
                                     <div className="status-info" id="postBody">
-                                        <h2 style={{fontWeight: 'lighter'}}>
+                                        <h2 style={{fontWeight: 'lighter', textAlign: 'left'}}>
                                             &#123;
                                             <br />
                                             {/* Convert string to number to show "fake" api lenght */}
