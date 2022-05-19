@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+body {
+  overflow: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 4.8rem;
+  opacity: 0.8;
+}
+
+h2,
+p {
+  color: white;
+  font-weight: 500;
+  font-size: 2.5rem;
+  opacity: 0.8;
+}
+
+label {
+  color: white;
+  font-size: x-large;
+  opacity: 0.8;
+}
+
+h3 {
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to left bottom, #8d8585, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: black;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(to right bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(34, 34, 34, 0.3));
+  border-radius: 0.6rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+
+.circle1,
+.circle2 {
+  background: black;
+  background: linear-gradient(to right bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(34, 34, 34, 0.3));
+  height: 32rem;
+  width: 32rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 5%;
+  right: 10%;
+}
+
+.circle2 {
+  bottom: 5%;
+  left: 10%;
+}
+
+#root>div {
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: black;
+  border-radius: 0.6rem;
+}
+
+.link {
+  display: flex;
+  margin: 1.6rem 0rem;
+  padding: 1.6rem 8rem;
+  align-items: center;
+}
+
+.link h2 {
+  padding: 0px 25px;
+  cursor: pointer;
+}
+
+.topic {
+  margin-bottom: 4.8rem;
+}
+
+.topic p {
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3));
+  width: 47%;
+  padding: 0.8rem;
+  border-radius: 3.2rem;
+}
+
+.table {
+  flex: 2;
+  margin: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.user>img {
+  height: 10vh;
+}
+
+.user>p {
+  font-size: 1.8rem;
+}
+
+svg {
+  color: white;
+  font-size: xx-large;
+}
+
+.status {
+  display: flex;
+  background: black;
+  border-radius: 1.6rem;
+  margin: 3.2rem;
+  padding: 3.2rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.status-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.status-info>h2 {
+  font-weight: revert;
+  font-size: 2.4rem;
+}
+
+.pushInput {
+  display: block;
+  flex-direction: column;
+}
+
+.percentage {
+  font-weight: bold;
+  background: #d13f3f;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.warning {
+  font-weight: bold;
+  background: #d89312;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+selection {
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  flex-direction: column;
+}
+
+.formAPI {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  flex-direction: column;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  height: 55vh;
+}
+
+.container::-webkit-scrollbar {
+  display: none
+}
+
+input {
+  margin: 5px 0px;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 3px solid #eee;
+  transition: .5s;
+}
+
+input:hover {
+  border: 3px solid rgb(85, 255, 127);
+}
+
+.postButton {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  border: solid #161616 1px;
+  background-color: #29db4f;
+  cursor: pointer;
+  transition: all 1s ease;
+  padding: 0px 10px 0px 10px;
+}
+
+.postButton:hover {
+  transition: all 1s ease;
+  background-color: #25af43;
+}
+
+@media (max-width: 1580px) {
+  input {
+    width: 60%;
+  }
+
+  @media (max-width: 1483px) {
+    input {
+      width: 70%;
+    }
+
+    .link {
+      padding: 0rem 1.6rem;
+    }
+
+    .user {
+      display: none;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+    }
+
+    .dashboard {
+      flex-direction: row;
+      padding: 20px;
+    }
+
+    .container {
+      height: 47vh;
+    }
+
+    .table {
+      margin: 4.6rem;
+    }
+
+    selection {
+      height: 47vh;
+    }
+
+    .glass {
+      margin-top: 4.1%;
+      margin-bottom: 4.1%;
+      display: block;
+      width: 90%;
+    }
+
+    .circle1 {
+      top: 0%;
+      right: -5%;
+    }
+
+    .circle2 {
+      bottom: 1%;
+      left: -3%;
+    }
+  }
+
+  @media (max-width: 1368px) {
+
+    body {
+      -ms-overflow-style: none;
+      /* Internet Explorer 10+ */
+      scrollbar-width: none;
+      /* Firefox */
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+
+    body::-webkit-scrollbar {
+      display: none;
+    }
+
+    .container {
+      height: auto
+    }
+
+    selection {
+      height: auto;
+    }
+
+    .status {
+      margin: 1%;
+    }
+
+    input {
+      width: 60%;
+    }
+
+    .link {
+      padding: 0rem 1.6rem;
+    }
+
+    .user {
+      display: none;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    .dashboard {
+      flex-direction: row;
+      padding: 20px;
+    }
+  }
+
+  @media (max-width: 528px) {
+
+    html {
+      font-size: 50%;
+    }
+
+    .user > img {
+      height: 13vh;
+    }
+
+    main {
+      align-items: stretch;
+    }
+
+    .warning,
+    .percentage {
+      text-align: center;
+      margin-top: 1%;
+    }
+  
+    .glass {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+  
+    .link {
+      display: none;
+    }
+  
+    .user {
+      display: list-item;
+    }
+  
+    .dashboard {
+      flex-direction: column;
+      padding: 20px;
+      border-radius: 0px 0px 5px 5px;
+    }
+  
+    .status-info>h2 {
+      font-size: 2rem;
+    }
+  
+    .status-info {
+      display: block;
+    }
+
+    .status {
+      display: flow-root;
+    }
+
+    .status h2 {
+      text-align: center;
+    }
+
+    .postButton {
+      width: 100%;
+      margin-top: 5%;
+    }
+  }
+}
