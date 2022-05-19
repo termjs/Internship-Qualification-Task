@@ -39,7 +39,7 @@ function FetchAPI() {
             post.children[0].addEventListener('click', (e) => { // For each child of posts - addEventListener
                 const postId = e.target.dataset.fetched; // Get target ID
                 localStorage.setItem("specificPost", postId);
-                window.location.assign("/detailspage"); // Open Details page
+                window.location.assign("Internship-Qualification-Task/detailspage"); // Open Details page
             });
         });
     };
