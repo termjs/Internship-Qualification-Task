@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route exact path='/' element={<ListPage />} />
-        <Route path='/newformpage' element={<NewForm />} />
+        <Route path='Internship-Qualification-Task/newformpage' element={<NewForm />} />
         <Route path='/detailspage' element={<Details />} />
       </Routes>
     </BrowserRouter>
