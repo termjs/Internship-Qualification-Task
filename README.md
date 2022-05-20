@@ -21,7 +21,7 @@ https://jsonplaceholder.typicode.com/posts <br>
 - [ ] Puslapis pritaikytas ne localhost naudojimui
 
 <h3>Pastaba:</h3>
-<i>Puslapis turi paslėptą Snap scroll, kuris randasi <b>List page</b> - Record form'e</i>
+<i>Puslapis turi paslėptą Snap scroll, kuris randasi <b>List page</b> puslapyje</i>
 <br>
 <h3>Preview:</h3>
 <img src="./src/images/preview.png" />
