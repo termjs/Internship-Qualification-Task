@@ -17,7 +17,7 @@ https://jsonplaceholder.typicode.com/posts <br>
 - [x] New Record Form.html (POST/GET)
 - [x] Hide Scroll bar
 - [x] Responsive Web page
-- [x] Standartinį JS perdaryti į React (GET/POST)
+- [x] Standartinį puslapį perdaryti į React
 - [ ] Puslapis pritaikytas ne localhost naudojimui
 
 <h3>Pastaba:</h3>
